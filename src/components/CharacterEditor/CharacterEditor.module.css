@@ -5,6 +5,7 @@
 
 .maxWidthWrapper {
   max-width: 1024px;
+  position: relative;
 }
 
 .header {
@@ -41,6 +42,14 @@
   .characterWrapper svg {
     min-height: 500px;
   }
+}
+
+.perspectiveDecoration {
+  position: fixed;
+  width: 100%;
+  top: 55vh;
+  height: 45vh;
+  background-color: hsl(195deg, 20%, 86%);
 }
 
 .controlColumn {
