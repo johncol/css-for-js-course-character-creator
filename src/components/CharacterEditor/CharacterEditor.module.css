@@ -55,3 +55,44 @@
 .controlColumn {
   width: 50%;
 }
+
+@media (max-width: 550px) {
+  html {
+    min-height: 100vh;
+    font-size: 14px;
+  }
+
+  .characterEditor {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .header {
+    padding-bottom: 16px;
+    width: auto;
+  }
+
+  .perspectiveDecoration {
+    display: none;
+  }
+
+  .maxWidthWrapper {
+    z-index: 2;
+  }
+
+  .characterWrapper {
+    position: static;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .controlColumn {
+    position: absolute;
+    width: calc(100vw - 64px);
+    display: flex;
+    gap: 10px;
+    overflow: auto;
+    bottom: -500px;
+  }
+}
